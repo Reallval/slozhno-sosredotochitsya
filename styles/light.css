@@ -1,67 +1,43 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
 
-  --subheadings-color: #000028;
+  --nav-color: #000000;
 
-  --title-color: #F1B2CE;
+  --border-nav-color: rgba(0, 0, 0, 0.5);
 
-  --accent-color: #ff0070;
+  --main-title-color: rgba(255, 194, 230, 1);
 
-  --nav-switch-color: #000028;
+  --accent-color: rgba(255, 141, 203, 1);
 
-  --pink-switch-color: #F1B2CE;
+  --article-title-color: #000000;
 
-  --paragraph-color: #000028;
+  --paragraph-color: #000000;
 
-  --background-image: url(/images/cover-image-light.png);
-
-  --main-font-family: 'IBM Plex mono', serif;
-
-  --switch-text-size: 18px;
-
-  --title-text-size: 116px;
-
-  --header-padding: 10px;
-
-  --line-height: 23.4px;
+  --background-cover: url(../images/cover-image-light.png);
 
   .rec {
     display: none;
   }
-
 }
-
 
 @media (prefers-color-scheme: light) {
   :root {
-    --subheadings-color: #000028;
+    --nav-color: #000000;
 
-    --title-color: #F1B2CE;
+    --border-nav-color: rgba(0, 0, 0, 0.5);
 
-    --accent-color: #ff0070;
+    --main-title-color: rgba(255, 194, 230, 1);
 
-    --paragraph-color: #000028;
+    --accent-color: rgba(255, 141, 203, 1);
 
-    --background-image: url(/images/cover-image-light.png);
+    --article-title-color: #000000;
 
-    --main-font-family: 'IBM Plex mono', serif;
+    --paragraph-color: #000000;
 
-    --switch-text-size: 18px;
-
-    --title-text-size: 116px;
-
-    --header-padding: 10px;
-
-    --line-height: 23.4px;
-    }
-
-    .rec {
-      display: none;
-    }
+    --background-cover: url(../images/cover-image-light.png);
 }
+  .rec {
+    display: none;
+  }
+}
+
 

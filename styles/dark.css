@@ -1,51 +1,41 @@
 .page.theme_dark {
+  --nav-color: rgba(255, 0, 112, 1);
 
-  --subheadings-color: #000028;
+  --border-nav-color: rgba(255, 0, 112, 0.5);
 
-  --title-color: #DB00FF;
+  --main-title-color: rgba(219, 0, 255, 1);
 
-  --pink-switch-color: #ff0070;
+  --accent-color: rgba(255, 0, 112, 1);
 
-  --nav-switch-color: #ff0070;
+  --article-title-color: rgba(255, 0, 112, 1);
 
-  --accent-color: #ff0070;
+  --main-text-color: #000000;
 
-  --paragraph-color: #F1B2CE;
+  --paragraph-color: rgba(241, 178, 206, 1);
 
-  --background-image: url(/images/cover-image-dark.png);
+  --background-cover: url(../images/cover-image-dark.png);
 
-  --main-font-family: 'IBM Plex mono', serif;
-
-  --switch-text-size: 18px;
-
-  --title-text-size: 116px;
-
-  --header-padding: 10px;
-
-  --line-height: 23.4px;
 }
 
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --subheadings-color: #000028;
+    --nav-color: rgba(255, 0, 112, 1);
 
-    --title-color: #DB00FF;
+    --border-nav-color: rgba(255, 0, 112, 0.5);
 
-    --accent-color: #ff0070;
+    --main-title-color: rgba(219, 0, 255, 1);
 
-    --paragraph-color: #F1B2CE;
+    --accent-color: rgba(255, 0, 112, 1);
 
-    --background-image: url(/images/cover-image-dark.png);
+    --article-title-color: rgba(255, 0, 112, 1);
 
-    --main-font-family: 'IBM Plex mono', serif;
+    --main-text-color: #000000;
 
-    --switch-text-size: 18px;
+    --paragraph-color: rgba(241, 178, 206, 1);
 
-    --title-text-size: 116px;
-
-    --header-padding: 10px;
-
-    --line-height: 23.4px;
+    --background-cover: url(../images/cover-image-dark.png);
   }
+
+
 }
