@@ -1,7 +1,7 @@
 .page.theme_dark {
   --nav-color: rgba(255, 0, 112, 1);
 
-  --border-nav-color: rgba(255, 0, 112, 0.5);
+  --border-nav-color: rgba(255, 0, 112, 0.4);
 
   --main-title-color: rgba(219, 0, 255, 1);
 
@@ -9,20 +9,23 @@
 
   --article-title-color: rgba(255, 0, 112, 1);
 
-  --main-text-color: #000000;
+  --main-text-color: rgba(0, 0, 40, 1);
 
   --paragraph-color: rgba(241, 178, 206, 1);
 
   --background-cover: url(../images/cover-image-dark.png);
+
+  --rec-decor-visibility: visible;
 
 }
 
 
 @media (prefers-color-scheme: dark) {
   :root {
+
     --nav-color: rgba(255, 0, 112, 1);
 
-    --border-nav-color: rgba(255, 0, 112, 0.5);
+    --border-nav-color: rgba(255, 0, 112, 0.4);
 
     --main-title-color: rgba(219, 0, 255, 1);
 
@@ -30,12 +33,12 @@
 
     --article-title-color: rgba(255, 0, 112, 1);
 
-    --main-text-color: #000000;
+    --main-text-color: rgba(0, 0, 40, 1);
 
     --paragraph-color: rgba(241, 178, 206, 1);
 
     --background-cover: url(../images/cover-image-dark.png);
+
+    --rec-decor-visibility: visible;
   }
-
-
 }

@@ -23,15 +23,16 @@
 
 
 .main_link:hover {
-  text-decoration: underline;
+  border-block-end: 1px solid;
+  writing-mode: horizontal-tb;
 }
 
 .main_link:focus {
-  outline: 0;
+  outline: none;
 }
 
 .main_link:focus-visible {
-  border: 1px solid var(--accent-color);
+  outline: 1px solid var(--paragraph-color);
 }
 /* стили ссылок */
 /* глобальные атрибуты */
@@ -40,7 +41,7 @@
 .rec {
   position: absolute;
   z-index: -1;
-  visibility: var(--rec-decor-visibility, visible);
+  visibility: var(--rec-decor-visibility);
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -110,12 +111,12 @@
 }
 
 .header__theme-menu-button_active {
-  border-color: var(--border-nav-color);
+  border-color: var(--nav-color);
   pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
-  border-color: var(--nav-color);
+  border-color: var(--border-nav-color);
 }
 
 .header__theme-menu-button:focus {
@@ -141,11 +142,15 @@
   gap: 12px;
 }
 
-.header_title {
+.title {
   color: var(--main-title-color);
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
+
+}
+
+.header_title {
   text-shadow: 4px 4px 0 #ff0070;
 }
 
@@ -172,12 +177,6 @@
 }
 /* этот гэп подвигать для текста как в макете */
 
-.main {
-  display: grid;
-  gap: 50px;
-  padding: 40px 10px;
-}
-
 .main_title {
   color: var(--article-title-color);
   font-weight: 700;
@@ -195,12 +194,11 @@
   gap: 10px;
 }
 
-.secondary_title {
-  color: var(--accent-color);
+.article_title {
+  color: var(--main-text-color);
   font-weight: 700;
   font-size: inherit;
   line-height: inherit;
-  color: var(--main-text-color);
   background: var(--accent-color);
 }
 
@@ -208,7 +206,7 @@
   color: var(--paragraph-color);
 }
 
-.not_main_title {
+.article__subtitle {
   color: var(--accent-color);
   font-weight: 100;
   font-size: inherit;
@@ -243,6 +241,10 @@
   place-items: center;
 }
 
+.footer_title {
+  text-shadow: 2px 2px 0 #ff0070;
+}
+
 
 @media (width >= 768px) {
   .rec {
@@ -250,7 +252,7 @@
     inset-block-start: 20px;
   }
 
-  .header_title {
+  .title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
@@ -309,9 +311,6 @@
 
 @media (width >= 1024px) {
 
-  .header_title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
 
   .header__theme-menu {
     justify-self: center;
@@ -337,6 +336,6 @@
   }
 
   .main_title {
-    max-width: 314.96px;
+    max-width: 19.685rem;
   }
 }

@@ -1,7 +1,7 @@
 :root {
   --nav-color: rgba(255, 0, 112, 1);
   /* цвет навигации, заменить на черный */
-  --border-nav-color: rgba(255, 0, 112, 0.5);
+  --border-nav-color: rgba(255, 0, 112, 0.4);
   /* для прозрачности у кнопок */
   --main-title-color: rgba(219, 0, 255, 1);
   /* цвет главного заголовка */
@@ -9,7 +9,8 @@
   /* цвет рамок в заголовках артиклов */
   --article-title-color: rgba(255, 0, 112, 1);
    /*поменять на черный  */
-  --main-text-color: #000000;
+  --main-text-color: rgba(0, 0, 40, 1);
+
   --paragraph-color: rgba(241, 178, 206, 1);
 
   --background-cover: url(../images/cover-image-dark.png);
@@ -18,4 +19,6 @@
   --font-size: 18px;
 
   --font-style: "IBM Plex mono", monospace;
+
+  --rec-decor-visibility: visible;
 }
