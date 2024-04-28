@@ -23,7 +23,7 @@
 
 
 .main_link:hover {
-  border-block-end: 1px solid;
+  border-block-end: 1px solid var(--hover-link-color);
   writing-mode: horizontal-tb;
 }
 
@@ -151,7 +151,7 @@
 }
 
 .header_title {
-  text-shadow: 4px 4px 0 #ff0070;
+  text-shadow: 4px 4px 0 var(--text-shadow-color);
 }
 
 .header_paragraph {
@@ -207,11 +207,10 @@
 }
 
 .article__subtitle {
-  color: var(--accent-color);
+  color: var(--main-text-color);
   font-weight: 100;
   font-size: inherit;
   line-height: inherit;
-  color: var(--main-text-color);
   background: var(--accent-color);
 }
 
@@ -242,7 +241,7 @@
 }
 
 .footer_title {
-  text-shadow: 2px 2px 0 #ff0070;
+  text-shadow: 2px 2px 0 var(--text-shadow-color);
 }
 
 

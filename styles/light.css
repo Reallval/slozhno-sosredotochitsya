@@ -14,6 +14,8 @@
 
   --paragraph-color: rgba(53, 52, 48, 1);
 
+  --hover-link-color: rgba(53, 52, 48, 1);
+
   --background-cover: url(../images/cover-image-light.png);
 
   --rec-decor-visibility: hidden;
@@ -35,6 +37,8 @@
     --article-title-color: rgba(53, 52, 48, 1);
 
     --paragraph-color: rgba(53, 52, 48, 1);
+
+    --hover-link-color: rgba(53, 52, 48, 1);
 
     --background-cover: url(../images/cover-image-light.png);
 
